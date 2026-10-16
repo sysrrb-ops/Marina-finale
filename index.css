@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-midnight: #0B1F3A;
+    --color-abyss: #071527;
+    --color-navy-card: #0E2A4E;
+    --color-ocean: #247DA5;
+    --color-gold: #C9A45C;
+    --color-gold-light: #DFB76C;
+    --color-pearl: #FFFFFF;
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0B1F3A;
+    color: #FFFFFF;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  .font-display-luxury {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.14em;
+  }
+
+  .font-num {
+    font-family: 'Outfit', 'Montserrat', sans-serif;
+    font-feature-settings: 'lnum' 1, 'tnum' 1;
+    font-variant-numeric: tabular-nums lining-nums;
+  }
+}
+
+/* Custom Scrollbar - Midnight & Champagne Gold */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #071527;
+}
+::-webkit-scrollbar-thumb {
+  background: #C9A45C;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #DFB76C;
+}
+
+/* Gold Gradient Text */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #DFB76C 0%, #C9A45C 50%, #9F7A36 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Gold Gradient Button */
+.gold-btn {
+  background: linear-gradient(135deg, #DFB76C 0%, #C9A45C 60%, #B89248 100%);
+  color: #071527;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+.gold-btn:hover {
+  background: linear-gradient(135deg, #EAD093 0%, #DFB76C 60%, #C9A45C 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px -5px rgba(201, 164, 92, 0.4);
+}
+
+/* Ocean Blue Button */
+.ocean-btn {
+  background: linear-gradient(135deg, #247DA5 0%, #1A5E7E 100%);
+  color: #FFFFFF;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.ocean-btn:hover {
+  background: linear-gradient(135deg, #2E97C7 0%, #247DA5 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px -5px rgba(36, 125, 165, 0.4);
+}
+
+/* Card Glow Effect */
+.luxury-card {
+  background: linear-gradient(135deg, rgba(14, 42, 78, 0.8) 0%, rgba(7, 21, 39, 0.95) 100%);
+  border: 1px solid rgba(201, 164, 92, 0.25);
+  backdrop-filter: blur(12px);
+  transition: all 0.35s ease;
+}
+.luxury-card:hover {
+  border-color: rgba(201, 164, 92, 0.6);
+  box-shadow: 0 15px 35px -10px rgba(7, 21, 39, 0.8), 0 0 20px rgba(201, 164, 92, 0.15);
+  transform: translateY(-2px);
+}
